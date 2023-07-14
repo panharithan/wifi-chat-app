@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:id="@+id/ic_back"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:id="@+id/img_light"
+            android:tint="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:onClick="ShowPopup"
+            android:src="@drawable/ic_camera"
+            android:clickable="true"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:layout_below="@+id/img_light"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textSize="21sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="30dp"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/ic_start_time"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/in_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_time"
+            android:layout_marginLeft="25dp"
+            android:hint="time start"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_stop_time"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="30dp"
+            android:layout_toRightOf="@+id/btn_time"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/ic_stop_time"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/set_time_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_stop_time"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/in_time"
+            android:hint="stop time"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btn_stop_time"
+            android:background="@drawable/ic_calendir"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/in_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_date"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/set_time_stop"
+            android:hint="Date time"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp" />
+    </RelativeLayout>
+</LinearLayout>

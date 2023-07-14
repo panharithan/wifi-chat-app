@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Home Automation with IoT</string>
+    <string name="home">Home</string>
+    <string name="setting">setting</string>
+    <string name="aboutus">About Us</string>
+    <string name="profile">Profile</string>
+
+    <string name="txt_aboutus">Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</string>
+</resources>
